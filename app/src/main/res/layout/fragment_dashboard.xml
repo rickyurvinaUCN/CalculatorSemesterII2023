@@ -7,17 +7,77 @@
     android:layout_height="match_parent"
     tools:context=".ui.dashboard.DashboardFragment" >
 
+
+
     <TextView
-        android:id="@+id/text_dashboard"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:id="@+id/txt_res2"
+        android:layout_width="348dp"
+        android:layout_height="156dp"
+
+        android:layout_marginBottom="212dp"
+        android:text="@string/result"
         android:textAlignment="center"
+        android:textColor="#039BE5"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_num3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="39dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/firstValue"
+        android:inputType="number"
+        android:textColorHint="#ac6c34"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_num4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_num4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="38dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/second_value"
+        android:inputType="number"
+        android:textColorHint="#ac6c34"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_num3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_num3"
+        app:layout_constraintTop_toTopOf="@+id/txt_num3" />
+
+    <Spinner
+        android:id="@+id/sp_operations"
+        android:layout_width="279dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintVertical_bias="0.273" />
+
+    <ImageButton
+        android:id="@+id/btn_calc2"
+        android:layout_width="51dp"
+        android:layout_height="57dp"
+        android:contentDescription="@string/description_btn_info"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/btn_star"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sp_operations"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.271" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

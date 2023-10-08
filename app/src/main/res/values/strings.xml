@@ -3,4 +3,10 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="next">Siguiente</string>
+    <string name="previous">Previo</string>
+    <string name="firstValue">Primer Valor</string>
+    <string name="second_value">Segundo Valor</string>
+    <string name="result">Resultado</string>
+    <string name="description_btn_info">Description Info</string>
 </resources>
